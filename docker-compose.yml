@@ -1,0 +1,16 @@
+services:
+  api:
+    build: ./backend
+    environment:
+      MAKAO_CORS_ORIGINS: http://localhost:8080
+      MAKAO_PUBLIC_BASE_URL: http://localhost:8080
+    volumes:
+      - makao-data:/data
+  web:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+volumes:
+  makao-data:

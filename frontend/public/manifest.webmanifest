@@ -1,0 +1,9 @@
+{
+  "name": "Makao — Flexible luxury, East Africa",
+  "short_name": "Makao",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f3ec",
+  "theme_color": "#123b2f",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
